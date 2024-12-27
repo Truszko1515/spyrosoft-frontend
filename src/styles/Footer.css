@@ -1,0 +1,30 @@
+.weather-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #ddd;
+}
+
+.weather-footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.summary-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .weather-footer p {
+    font-size: 0.9rem; 
+  }
+
+  .summary-header {
+    font-size: 1.2rem; 
+  }
+}

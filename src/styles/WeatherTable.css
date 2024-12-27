@@ -1,0 +1,33 @@
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.weather-table th,
+.weather-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.weather-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.weather-table td {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .weather-table {
+    display: block;
+    overflow-x: auto; 
+  }
+
+  .weather-table th,
+  .weather-table td {
+    white-space: nowrap; 
+  }
+}

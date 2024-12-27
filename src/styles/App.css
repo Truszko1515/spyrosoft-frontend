@@ -1,0 +1,117 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.location-form {
+  margin-bottom: 20px;
+}
+.location-form label {
+  margin-right: 10px;
+}
+.location-form input {
+  margin: 5px;
+  padding: 5px;
+}
+.location-form button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Error Popup Styles */
+.error-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px; /* Maksymalna szerokość, aby treść była czytelna */
+  word-wrap: break-word; /* Złam linie, jeśli są zbyt długie */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Stylizacja Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .app {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode input {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
+
+body.dark-mode .weather-table th,
+body.dark-mode .weather-table td {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark-mode .weather-footer {
+  background-color: #333;
+}
+
+body.dark-mode h2 {
+  color: #f0f0f0;
+}
+
+/* Stylizacja przycisku Dark Mode */
+.toggle-dark-mode {
+  position: absolute; /* Przyklejenie do ekranu */
+  top: 20px; /* Odstęp od góry */
+  left: 20px; /* Odstęp od lewej */
+  z-index: 1000; /* Wyższy priorytet */
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-dark-mode:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputs button {
+    width: 100%;
+  }
+}
+
