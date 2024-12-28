@@ -50,12 +50,12 @@ const App = () => {
     }
   
     axios
-      .get(`https://localhost:7115/WeatherForecast/weekly-forecast?Latitude=${location.lat}&Longitude=${location.lon}`)
+      .get(`https://localhost:5001/WeatherForecast/weekly-forecast?Latitude=${location.lat}&Longitude=${location.lon}`)
       .then((response) => setWeatherData(response.data))
       .catch((error) => handleApiError(error));
   
     axios
-      .get(`https://localhost:7115/WeatherForecast/weekly-summary?Latitude=${location.lat}&Longitude=${location.lon}`)
+      .get(`https://localhost:5001/WeatherForecast/weekly-summary?Latitude=${location.lat}&Longitude=${location.lon}`)
       .then((response) => {
         setWeatherSummary(response.data);
   
