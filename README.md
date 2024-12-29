@@ -43,7 +43,6 @@ Aplikacja webowa stworzona przy użyciu **React**, umożliwiająca użytkownikow
 2. Przejdź do katalogu projektu frontendu:
    ```bash
    npm install
-   
    ```bash
    npm start
 
