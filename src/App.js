@@ -50,12 +50,12 @@ const App = () => {
     }
   
     axios
-      .get(`http://localhost:5000/WeatherForecast/weekly-forecast?Latitude=${location.lat}&Longitude=${location.lon}`)
+      .get(`https://spyrosoft-backend.onrender.com/WeatherForecast/weekly-forecast?Latitude=${location.lat}&Longitude=${location.lon}`)
       .then((response) => setWeatherData(response.data))
       .catch((error) => handleApiError(error));
   
     axios
-      .get(`http://localhost:5000/WeatherForecast/weekly-summary?Latitude=${location.lat}&Longitude=${location.lon}`)
+      .get(`https://spyrosoft-backend.onrender.com/WeatherForecast/weekly-summary?Latitude=${location.lat}&Longitude=${location.lon}`)
       .then((response) => {
         setWeatherSummary(response.data);
   
