@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Frontend Aplikacji Prognozy Pogody
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikacja webowa stworzona przy użyciu **React**, umożliwiająca użytkownikowi przeglądanie 7-dniowej prognozy pogody na podstawie aktualnej lokalizacji lub wskazanych współrzędnych. Aplikacja korzysta z backendowego API do pobierania danych pogodowych.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Funkcjonalności
 
-### `npm start`
+### Prognoza pogody
+- Wyświetlanie 7-dniowej prognozy w czytelnej tabeli.
+- Informacje obejmują:
+  - Datę w formacie `DD/MM/YYYY`.
+  - Ikonę warunków pogodowych.
+  - Maksymalną i minimalną temperaturę.
+  - Szacowaną generację energii słonecznej (kWh).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Interaktywna mapa
+- Umożliwia wybór lokalizacji za pomocą mapy **Leaflet**.
+- Automatyczne uzupełnianie współrzędnych w formularzu po kliknięciu na mapie.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tryb Dark Mode
+- Zmiana motywu aplikacji na ciemny lub jasny.
+- Preferencje użytkownika zapisywane w `localStorage`.
 
-### `npm test`
+### Responsywność
+- Układ dostosowany do urządzeń desktopowych, tabletów i smartfonów.
+  
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologie i narzędzia
 
-### `npm run build`
+- **React**: Zarządzanie stanem i interakcjami użytkownika.
+- **React-Leaflet**: Obsługa interaktywnej mapy.
+- **FontAwesome**: Ikony pogodowe.
+- **CSS Media Queries**: Responsywność.
+- **LocalStorage**: Zapisywanie preferencji trybu ciemnego.
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instrukcja uruchomienia
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Lokalnie
+1. Upewnij się, że masz zainstalowany **Node.js**.
+2. Przejdź do katalogu projektu frontendu:
+   ```bash
+   npm install
+   ```bash
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Uruchamianie aplikacji w Dockerze
+1. Zbuduj dockerowy obraz a następnie uruchom kontener na jego podstawie:
+   ```bash
+   docker-compose up --build
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
