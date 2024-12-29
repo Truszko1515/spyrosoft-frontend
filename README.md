@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Weather Forecast Frontend Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application built with **React**, enabling users to view a 7-day weather forecast based on their current location or specified coordinates. The application retrieves weather data through a backend API.
+---
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Weather Forecast
+- Displays a 7-day weather forecast in a user-friendly table.
+- The information includes:
+  - Date in the `DD/MM/YYYY` format.
+  - Weather condition icon.
+  - Maximum and minimum temperatures.
+  - Estimated solar energy generation (kWh).
 
-### `npm start`
+### Interactive Map
+- Allows users to select a location using the **Leaflet** map.
+- Automatically fills in coordinates in the form after clicking on the map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dark Mode
+- Allows switching between light and dark themes.
+- User preferences are saved in `localStorage`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Responsiveness
+- The layout adapts to desktops, tablets, and smartphones.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies and Tools
 
-### `npm run build`
+- **React**: State management and user interactions.
+- **React-Leaflet**: Integration of an interactive map.
+- **FontAwesome**: Weather icons.
+- **CSS Media Queries**: Ensuring responsiveness across devices.
+- **LocalStorage**: Saving dark mode preferences.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run Locally
+1. Ensure that **Node.js** is installed.
+2. Navigate to the frontend project directory:
+   ```bash
+   cd frontend
+   
+### Run In Docker Container Requirements
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Running the Application in Docker
+1. Requirements:
+- **Docker** and **Docker Compose**
+2. Build the Docker image and then run the container:
+   ```bash
+   docker-compose up --build
